@@ -9,21 +9,31 @@ body {
 
 nav {
     padding: 1em;
+    max-height: 9em;
     background: #FDC830;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #F37335, #FDC830);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 
+.list-object{
+    max-height: 9em;
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    justify-content: left;
+}
+
 .navbar-object {
-    padding: 0.5em;
-    padding-right: 1em;
-    display: inline;
+    margin: 0.5em;
+    max-width: 10em;
+    display: flex;
+    text-align: center;
 }
 
 .navbar-subobject {
     padding: 0.20em;
-    display: inline;
+    display: flex;
 }
 
 .navbar-object-text {
@@ -78,35 +88,39 @@ nav {
     margin: 1.5em;
 }
 
-.grid {
-    margin: 5%;
-}
-
-.line {
-    max-width: 100%;
-    max-height: 100%;
-    margin: 2%;
-    align-items: center;
-    text-align: center;
+.flex-container {
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    /* align-content: stretch; */
+    flex-flow: row wrap;
+    justify-content: space-around;
+    /* align-items: center; */
+    /* background-color: red; */
+    padding: 1em;
 }
 
-.miniature {
-    max-width: 100%;
-    max-height: 100%;
-    margin: 2%;
-    align-items: center;
-    text-align: center;
+.flex-container div {
+    /* background-color: blue; */
     color: #F37335;
-    display: flex;
-    flex-direction: column;
+    margin: 0.5em;
+    width: 7.5em;
+    min-width: 7.5em;
+    height: 10.5em;
+    text-align: center;
+    font-size: 2em;
     border: 0.25em solid #FDC830;
 }
 
+.image-project{
+    width: 6em;
+    height: 7em;
+    margin: 0.5em;
+}
+
 .proyect-name {
-    display: block;
-    margin: 5%;
+    font-size: 100%;
+    margin: 0.1em;
     text-decoration: none;
     color: #F37335;
     font-weight: bold;
@@ -115,8 +129,6 @@ nav {
 }
 
 .proyect-name:hover {
-    display: block;
-    margin: 5%;
     text-decoration: none;
     color: #FDC830;
     font-weight: bold;
