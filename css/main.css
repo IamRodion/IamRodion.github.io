@@ -105,6 +105,7 @@ nav {
 }
 
 .proyect-name {
+    display: block;
     margin: 5%;
     text-decoration: none;
     color: #F37335;
@@ -114,6 +115,7 @@ nav {
 }
 
 .proyect-name:hover {
+    display: block;
     margin: 5%;
     text-decoration: none;
     color: #FDC830;
