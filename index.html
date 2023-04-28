@@ -1,46 +1,270 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Datos de SEO -->
-    <meta name="keywords" content="machanger, ifchanger, translaterminal, SrIT">
-    <meta name="description" content="Códigos y repositorios creados por IamRodion">
-    <meta name="author" content="IamRodion">
-    <meta name="robots" content="index">
-    <title>Rodion</title>
-    <link rel="stylesheet" href="css/normalize.css">
+    <title>IamRodion</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="icon" href="img/logo.png">
 </head>
 
 <body>
-    <main>
-        <header>
-            <nav>
-                <ul class=list-object>
-                    <li class="navbar-object"><a class="navbar-object-text" href="index.html">Página Principal</a></li>
-                    <li class="navbar-object"><a class="navbar-object-text" href="proyectos.html" >Proyectos</a></li>
-                    <li class="navbar-object"><a class="navbar-object-text" href="#">Contacto</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <article>
-            <div class="home-info">
-                <div>
-                    <h1 class="home-info-title">@IamRodion</h1>
-                </div>
-                <p class="home-info-paragraph">Página de proyectos realizados por Rodion y subidos en Github. En esta página se encontrará el funcionamiento de cada repositorio explicado paso a paso.
-                    Todos los proyectos pueden ser encontrados en Github en el botón de abajo.
-                </p>
-                <a class="boton" target="_blank" href="https://github.com/IamRodion?tab=repositories">Ir a Github</a>
+    <div class="contrainer">
+        <div class="row m-3 align-items-center">
+            <div class="col col-12 text-center">
+                <h1 class="display-3">IamRodion</h1>
             </div>
-        </article>
+            <div class="col col-12 text-center">
+                <a href="https://github.com/IamRodion"><img src="https://avatars.githubusercontent.com/u/22568039?v=4"
+                        class="img-fluid rounded-circle border border-primary" alt="Github's profile pic"
+                        style="height: 200px;">
+                </a>
+            </div>
+            <div class="col col-12 text-center mt-3">
+                <figure class="text-center">
+                    <blockquote class="blockquote">
+                        <!-- <p>Hi, I'm Rodion and on this website you can take a look at my main projects.<br>I mainly know
+                            and use Python, SQL, Git, Bash, Go, Rust, HTML, CSS, and Javascript.<br>I love linux and am
+                            currently learning backend development.</p> -->
+                        <p>Hola, soy Rodion y en este sitio web puedes ver mis principales proyectos.<br>Conozco y uso
+                            principalmente Python, SQL, Git, Bash, Go, Rust, HTML, CSS y Javascript. <br>Me encanta
+                            Linux y actualmente estoy aprendiendo desarrollo backend.</p>
+                    </blockquote>
+                </figure>
+            </div>
+        </div>
+        <div class="row my-5 align-items-center">
+            <div class="col text-center">
+                <h3 class="display-4">Proyectos</h3>
 
-    </main>
+                <div class="album py-5 bg-body-tertiary">
+                    <div class="container">
+
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                            <div class="col">
+                                <div class="mb-3 shadow-lg">
+                                    <div>
+                                        <img style="max-width: 100%;" class="bd-placeholder-img card-img-top"
+                                            src="img/Mantis Banner.png" alt="Mantis Banner">
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="h1">Mantis</p>
+                                        <p class="card-text">Programa web creado en <span
+                                                class="text-info">Python</span> con el framework <span
+                                                class="text-danger">Flask</span>, para la gestión de pedidos de
+                                            micro-empresas.</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="btn-group">
+                                                <a type="button" class="btn btn-sm btn-outline-secondary"
+                                                    href="#">Ver</a>
+                                                <a type="button" class="btn btn-sm btn-outline-secondary"
+                                                    href="https://github.com/IamRodion/Mantis"
+                                                    target="_blank">Github</a>
+                                            </div>
+                                            <span class="badge bg-python border border-primary">Python 3</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="mb-3 shadow-lg">
+                                    <div>
+                                        <img style="max-width: 100%;" class="bd-placeholder-img card-img-top"
+                                            src="img/TraslaTerminal Banner.svg" alt="TraslaTerminal Banner">
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="h1">TranslaTerminal</p>
+                                        <p class="card-text">Traductor a través de terminal (CLI) que funciona
+                                            realizando con <span class="text-info">Python</span> solicitudes con <span
+                                                class="text-warning">Requests</span> a la web de Google Translate.</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="btn-group">
+                                                <a type="button" class="btn btn-sm btn-outline-secondary"
+                                                    href="#">Ver</a>
+                                                <a type="button" class="btn btn-sm btn-outline-secondary"
+                                                    href="https://github.com/IamRodion/TranslaTerminal"
+                                                    target="_blank">Github</a>
+                                            </div>
+                                            <span class="badge bg-python border border-primary">Python 3</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="mb-3 shadow-lg">
+                                    <div>
+                                        <img style="max-width: 100%;" class="bd-placeholder-img card-img-top"
+                                            src="img/IFChanger Banner.jpg" alt="IFChanger Banner">
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="h1">IFChanger</p>
+                                        <p class="card-text">Programa CLI en <span class="text-info">Python</span> que
+                                            detecta y cambiar la interfaz de red inalambrica del equipo en que se está
+                                            ejecutando a modo monitor o managed.
+                                        </p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="btn-group">
+                                                <a type="button" class="btn btn-sm btn-outline-secondary"
+                                                    href="#">Ver</a>
+                                                <a type="button" class="btn btn-sm btn-outline-secondary"
+                                                    href="https://github.com/IamRodion/IFChanger"
+                                                    target="_blank">Github</a>
+                                            </div>
+                                            <span class="badge bg-python border border-primary">Python 3</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="mb-3 shadow-lg">
+                                    <div>
+                                        <img style="max-width: 100%;" class="bd-placeholder-img card-img-top"
+                                            src="img/RouterScraper Banner.jpg" alt="RouterScraper Banner">
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="h1">RouterScraper</p>
+                                        <p class="card-text">Programa CLI en <span class="text-info">Python</span> que
+                                            realiza webscrap sobre la web de configuración de routers, y obtiene mac,
+                                            nombre de red y contraseña.</p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="btn-group">
+                                                <a type="button" class="btn btn-sm btn-outline-secondary"
+                                                    href="#">Ver</a>
+                                                <a type="button" class="btn btn-sm btn-outline-secondary"
+                                                    href="https://github.com/IamRodion/RouterScraper"
+                                                    target="_blank">Github</a>
+                                            </div>
+                                            <span class="badge bg-python border border-primary">Python 3</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="col">
+                                <div class="mb-3 shadow-lg">
+                                    <div>
+                                        <img style="max-width: 100%;" class="bd-placeholder-img card-img-top"
+                                            src="img/Mantis Banner.png" alt="">
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="h1">Mantis</p>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                        </p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="btn-group">
+                                                <button type="button"
+                                                    class="btn btn-sm btn-outline-secondary">Ver</button>
+                                                <button type="button"
+                                                    class="btn btn-sm btn-outline-secondary">Github</button>
+                                            </div>
+                                            <small class="text-body-secondary">Python</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="mb-3 shadow-lg">
+                                    <div>
+                                        <img style="max-width: 100%;" class="bd-placeholder-img card-img-top"
+                                            src="img/Mantis Banner.png" alt="">
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="h1">Mantis</p>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                        </p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="btn-group">
+                                                <button type="button"
+                                                    class="btn btn-sm btn-outline-secondary">Ver</button>
+                                                <button type="button"
+                                                    class="btn btn-sm btn-outline-secondary">Github</button>
+                                            </div>
+                                            <small class="text-body-secondary">Python</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="mb-3 shadow-lg">
+                                    <div>
+                                        <img style="max-width: 100%;" class="bd-placeholder-img card-img-top"
+                                            src="img/Mantis Banner.png" alt="">
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="h1">Mantis</p>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                        </p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="btn-group">
+                                                <button type="button"
+                                                    class="btn btn-sm btn-outline-secondary">Ver</button>
+                                                <button type="button"
+                                                    class="btn btn-sm btn-outline-secondary">Github</button>
+                                            </div>
+                                            <small class="text-body-secondary">Python</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="mb-3 shadow-lg">
+                                    <div>
+                                        <img style="max-width: 100%;" class="bd-placeholder-img card-img-top"
+                                            src="img/Mantis Banner.png" alt="">
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="h1">Mantis</p>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                        </p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="btn-group">
+                                                <button type="button"
+                                                    class="btn btn-sm btn-outline-secondary">Ver</button>
+                                                <button type="button"
+                                                    class="btn btn-sm btn-outline-secondary">Github</button>
+                                            </div>
+                                            <small class="text-body-secondary">Python</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="mb-3 shadow-lg">
+                                    <div>
+                                        <img style="max-width: 100%;" class="bd-placeholder-img card-img-top"
+                                            src="img/Mantis Banner.png" alt="">
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="h1">Mantis</p>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                        </p>
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="btn-group">
+                                                <button type="button"
+                                                    class="btn btn-sm btn-outline-secondary">Ver</button>
+                                                <button type="button"
+                                                    class="btn btn-sm btn-outline-secondary">Github</button>
+                                            </div>
+                                            <small class="text-body-secondary">Python</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
 </body>
 
 </html>
