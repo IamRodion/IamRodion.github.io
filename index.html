@@ -8,7 +8,7 @@
     <title>IamRodion</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css"/>
+    <!-- <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css"/> -->
     <script defer src="https://pyscript.net/latest/pyscript.js"></script>
 </head>
 
@@ -39,7 +39,8 @@
             <div class="col col-12 text-center mt-3">
                 <py-script output="replOutput">
                     for i in range(1, 11):
-                        print(i)
+                        <!-- print(i) -->
+                        pyscript.write("replOutput", i)
                 </py-script>
                 <div id="replOutput"></div>
             </div>
@@ -63,7 +64,7 @@
                                         <p class="card-text">Programa web creado en <span
                                                 class="text-info">Python</span> con el framework <span
                                                 class="text-danger">Flask</span>, para la gestión de pedidos de
-                                            micro-empresas.</p>
+                                            micro-empresas, desde la recepción hasta la entrega.</p>
                                         <div class="d-flex justify-content-between align-items-center">
                                             <div class="btn-group">
                                                 <a type="button" class="btn btn-sm btn-outline-secondary"
