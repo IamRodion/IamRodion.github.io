@@ -11,7 +11,7 @@
     <!-- <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css"/> -->
     <script defer src="https://pyscript.net/latest/pyscript.js"></script>
     <py-env>
-        - requests
+        - random
     </py-env>
 </head>
 
@@ -41,13 +41,10 @@
             </div>
             <div class="col col-12 text-center mt-3">
                 <py-script>
-                    import requests
-                    
-                    CHECK_IP_URL = 'http://checkip.amazonaws.com'
-                    TIMEOUT = 5
-                    session = requests.Session()
-                    ip = requests.get(CHECK_IP_URL, timeout=TIMEOUT).text.strip()
-                    pyscript.write("replOutput", ip)
+                    import random
+                    n = random.ranint(101)
+                    frase = f'El número aleatorio generado fue {n}'
+                    pyscript.write("replOutput", frase)
                 </py-script>
                 <div id="replOutput"></div>
             </div>
