@@ -41,6 +41,8 @@
             </div>
             <div class="col col-12 text-center mt-3">
                 <py-script>
+                    import requests
+                    
                     CHECK_IP_URL = 'http://checkip.amazonaws.com'
                     TIMEOUT = 5
                     session = requests.Session()
