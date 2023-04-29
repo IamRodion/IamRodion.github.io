@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="css/main.css">
     <!-- <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css"/> -->
     <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+    <py-env>
+        - requests
+    </py-env>
 </head>
 
 <body>
@@ -37,9 +40,12 @@
                 </figure>
             </div>
             <div class="col col-12 text-center mt-3">
-                <py-script output="replOutput">
-                    for i in range(1, 11):
-                        pyscript.write("replOutput", i)
+                <py-script>
+                    CHECK_IP_URL = 'http://checkip.amazonaws.com'
+                    TIMEOUT = 5
+                    session = requests.Session()
+                    ip = requests.get(CHECK_IP_URL, timeout=TIMEOUT).text.strip()
+                    pyscript.write("replOutput", ip)
                 </py-script>
                 <div id="replOutput"></div>
             </div>
