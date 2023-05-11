@@ -1,13 +1,5 @@
-.bg-python{ 
-    background: #417cad;  /* fallback for old browsers */ 
-    background: -webkit-linear-gradient(to right, #f2cc46, #417cad);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #f2cc46, #417cad); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-py-env{
-    display: none;
-}
-
-py-terminal{
-    display: none;
+.card-body{
+    background-color: #efefef;
+    border-bottom-left-radius: 23px;
+    border-bottom-right-radius: 23px;
 }

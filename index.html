@@ -8,16 +8,11 @@
     <title>IamRodion</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
-    <!-- <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css"/> -->
-    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
-    <py-env>
-        - random
-    </py-env>
 </head>
 
 <body>
     <div class="contrainer">
-        <div class="row m-3 align-items-center">
+        <div class="row m-3 align-items-center justify-content-center">
             <div class="col col-12 text-center">
                 <h1 class="display-4">IamRodion</h1>
             </div>
@@ -27,30 +22,34 @@
                         style="height: 200px;">
                 </a>
             </div>
-            <div class="col col-12 text-center mt-3">
+            <div class="col col-9 text-center mt-3">
                 <figure class="text-center">
                     <blockquote class="blockquote">
-                        <!-- <p>Hi, I'm Rodion and on this website you can take a look at my main projects.<br>I mainly know
-                            and use Python, SQL, Git, Bash, Go, Rust, HTML, CSS, and Javascript.<br>I love Linux and am
-                            currently learning backend development.</p> -->
-                        <p>Hola, soy Rodion y en este sitio web puedes ver mis principales proyectos.<br>Conozco y uso
-                            principalmente Python, SQL, Git, Bash, Go, Rust, HTML, CSS y Javascript. <br>Me encanta
-                            Linux y actualmente estoy aprendiendo desarrollo backend.</p>
+                        <!-- <p>Hi, I'm Rodion and on this website you can take a look at my main projects. I mainly know
+                            and use:
+                            <br>Python (Django, Flask, FastAPI, Tkinter, PyQt)
+                            <br>SQL (SQLite3, PostgreSQL, MySQL, Firebase)
+                            <br>Git (Github)
+                            <br>Bash, Go, Rust
+                            <br>HTML, CSS (Bootstrap), and Javascript.
+                            <br>I love Linux and am currently learning backend development.
+                        </p> -->
+                        <p>Hola, soy Rodion y en este sitio web puedes ver mis principales proyectos. Conozco y uso
+                            principalmente:
+                            <br>Python (Django, Flask, FastAPI, Tkinter, PyQt)
+                            <br>SQL (SQLite3, PostgreSQL, MySQL, Firebase)
+                            <br>Git (Github)
+                            <br>Bash, Go, Rust
+                            <br>HTML, CSS (Bootstrap) y Javascript.
+                            <br>Me encanta Linux y actualmente estoy aprendiendo desarrollo backend.
+                        </p>
                     </blockquote>
                 </figure>
-            </div>
-            <div class="col col-12 text-center mt-3">
-                <py-script>
-                    import random
-                    n = random.randint(0, 101)
-                    frase = f'El número aleatorio generado fue {n}'
-                    pyscript.write("replOutput", frase)
-                </py-script>
-                <div id="replOutput"></div>
             </div>
         </div>
         <div class="row my-5 align-items-center">
             <div class="col text-center">
+                <!-- <h3 class="display-5">Proyectos</h3> -->
                 <h3 class="display-5">Proyectos</h3>
 
                 <div class="album py-5 bg-body-tertiary">
@@ -58,7 +57,8 @@
 
                         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                             <div class="col">
-                                <div class="mb-3 shadow-lg">
+                                <!-- <div class="mb-3 shadow-lg"> -->
+                                <div class="mb-3">
                                     <div>
                                         <img style="max-width: 100%;" class="bd-placeholder-img card-img-top"
                                             src="img/Mantis Banner.png" alt="Mantis Banner">
@@ -83,7 +83,7 @@
                                 </div>
                             </div>
                             <div class="col">
-                                <div class="mb-3 shadow-lg">
+                                <div class="mb-3">
                                     <div>
                                         <img style="max-width: 100%;" class="bd-placeholder-img card-img-top"
                                             src="img/TranslaTerminal Banner.svg" alt="TranslaTerminal Banner">
@@ -107,7 +107,7 @@
                                 </div>
                             </div>
                             <div class="col">
-                                <div class="mb-3 shadow-lg">
+                                <div class="mb-3">
                                     <div>
                                         <img style="max-width: 100%;" class="bd-placeholder-img card-img-top"
                                             src="img/IFChanger Banner.jpg" alt="IFChanger Banner">
@@ -115,7 +115,7 @@
                                     <div class="card-body">
                                         <p class="h1">IFChanger</p>
                                         <p class="card-text">Programa CLI en <span class="text-info">Python</span> que
-                                            detecta y cambiar la interfaz de red inalámbrica del equipo en que se está
+                                            detecta y cambia la interfaz de red inalámbrica del equipo en que se está
                                             ejecutando a modo monitor o managed.
                                         </p>
                                         <div class="d-flex justify-content-between align-items-center">
@@ -133,7 +133,7 @@
                             </div>
 
                             <div class="col">
-                                <div class="mb-3 shadow-lg">
+                                <div class="mb-3">
                                     <div>
                                         <img style="max-width: 100%;" class="bd-placeholder-img card-img-top"
                                             src="img/RouterScraper Banner.jpg" alt="RouterScraper Banner">
@@ -162,8 +162,6 @@
             </div>
         </div>
     </div>
-    <!-- <py-config scr='./pyscript.toml'><py-config>
-    <py-script src='./main.py'></py-script> -->
 </body>
 
 </html>
