@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mirage Trades</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/index.html">Mirage Trades</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
+                aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Equip</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/trades.html">Trades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Users</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-sm-2" type="search" placeholder="Item o Clase">
+                    <button class="btn btn-secondary my-2 my-sm-0" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-4 table-responsive">
+        <h1>Trades</h1>
+        <table class="table table-striped table-light text-center">
+            <thead>
+                <tr class="table-primary">
+                    <th scope="col">Icon</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Primary</th>
+                    <th scope="col">Secondary</th>
+                    <th scope="col">Bonus</th>
+                    <th scope="col">Enchant</th>
+                    <th scope="col">Elite</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Seller</th>
+                </tr>
+            </thead>
+            <tbody id="main">
+                <tr>
+                    <td><img src="img/icons/heavy/Boots-heavy-8.png" alt="Royal-Boots-Icon"></td>
+                    <td>Granite Boots</td>
+                    <td><span class="badge rounded-pill bg-primary">18 Mele</span></td>
+                    <td><span class="badge rounded-pill bg-primary">9 Mele</span></td>
+                    <td>Fortified<br>Empowered</td>
+                    <td>No</td>
+                    <td><img src="img/icons/others/Elite-no.png" alt="Elite-no-Icon"><br>No</td>
+                    <td><img src="img/icons/others/Gold.png" alt=""><br>180</td>
+                    <td>Carlos we</td>
+                </tr>
+                <tr>
+                    <td><img src="img/icons/heavy/Chest-heavy-6.png" alt="Platinum-Armour-Icon"></td>
+                    <td>Platinum Armour</td>
+                    <td><span class="badge rounded-pill bg-primary">12 Mele</span></td>
+                    <td><span class="badge rounded-pill bg-secondary">14 Defence</span></td>
+                    <td>Fortified<br>Omni Resist</td>
+                    <td><img src="img/icons/others/Element-fire.png" alt="Element-fire-Icon"><br>Fire</td>
+                    <td><img src="img/icons/others/Elite.png" alt=""><br>Yes</td>
+                    <td><img src="img/icons/others/Gold.png" alt=""><br>120</td>
+                    <td>Akameex</td>
+                </tr>
+                <tr>
+                    <td><img src="img/icons/medium/Chest-medium-8.png" alt="Sentinel-Armour-Icon"></td>
+                    <td>Sentinel Armour</td>
+                    <td><span class="badge rounded-pill bg-danger">18 Distance</span></td>
+                    <td><span class="badge rounded-pill bg-danger">9 Distance</span></td>
+                    <td>Empowered<br>Omni Resist</td>
+                    <td><img src="img/icons/others/Element-energy.png" alt="Element-energy-Icon"><br>Energy</td>
+                    <td><img src="img/icons/others/Elite.png" alt=""><br>Yes</td>
+                    <td><img src="img/icons/others/Gold.png" alt=""><br>200</td>
+                    <td>Pega Elee</td>
+                </tr>
+                <tr>
+                    <td><img src="img/icons/light/Gloves-light-8.png" alt="Crystal-Gloves-Icon"></td>
+                    <td>Crystal Gloves</td>
+                    <td><span class="badge rounded-pill bg-warning">18 Magic</span></td>
+                    <td><span class="badge rounded-pill bg-warning">9 Magic</span></td>
+                    <td>Empowered<br>Fortified</td>
+                    <td>No</td>
+                    <td><img src="img/icons/others/Elite-no.png"><br>No</td>
+                    <td><img src="img/icons/others/Gold.png" alt=""><br>190</td>
+                    <td>Eleazar</td>
+                </tr>
+                <tr>
+                    <td><img src="img/icons/heavy/Boots-heavy-9.png" alt="Golden-Boots-Icon"></td>
+                    <td>Crystal Gloves</td>
+                    <td><span class="badge rounded-pill bg-primary">20 Mele</span></td>
+                    <td><span class="badge rounded-pill bg-primary">10 Mele</span></td>
+                    <td>Omni Resist<br>Thorns</td>
+                    <td><img src="img/icons/others/Element-ice.png" alt="Element-ice-Icon"><br>Ice</td>
+                    <td><img src="img/icons/others/Elite-no.png"><br>No</td>
+                    <td><img src="img/icons/others/Gold.png" alt=""><br>220</td>
+                    <td>Szajmov</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <figure class="text-center">
+        <blockquote class="blockquote">
+            <p class="mb-0">Created by <cite title="Source Title">IamRodion</cite></p>
+        </blockquote>
+        <figcaption class="blockquote-footer">
+            github.com/IamRodion
+        </figcaption>
+    </figure>
+
+    <script src="/js/jquery-3.7.0.min.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+
+
+</html>

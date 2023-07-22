@@ -3,143 +3,61 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ImRodion</title>
-    <link rel="shortcut icon" href="https://avatars.githubusercontent.com/u/22568039?v=4" type="image/x-icon">
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/main.css">
+    <title>Mirage Trades</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 
 <body>
-    <!-- Aviso de desarrollo -->
-    <div class="alert alert-dismissible alert-warning">
-        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-        <strong>Atención</strong>, <a href="https://github.com/IamRodion/IamRodion.github.io" class="alert-link"> esta
-            página web</a> se encuentra actualmente <strong>en desarrollo</strong>.
-    </div>
-
-    <div class="container">
-        <div class="row my-3 align-items-center justify-content-center">
-            <div class="col col-12 text-center">
-                <h1 class="display-4">IamRodion</h1>
-            </div>
-            <div class="col col-12 text-center">
-                <a href="https://github.com/IamRodion">
-                    <img src="https://avatars.githubusercontent.com/u/22568039?v=4"
-                        class="img-fluid rounded border border-warning" alt="Foto de perfil de Github"
-                        style="height: 200px;">
-                </a>
-            </div>
-            <div class="col col-9 text-center mt-3">
-                <figure class="text-center">
-                    <blockquote class="blockquote">
-                        <p>Hola, soy <strong>Rodion</strong> y en este sitio web puedes ver mis principales proyectos.
-                            <br>Conozco y uso principalmente:
-                            <br><strong>Python</strong> (Django, Flask, FastAPI, Tkinter, PyQt)
-                            <br><strong>SQL</strong> (SQLite3, PostgreSQL, MySQL, Firebase)
-                            <br><strong>GIT</strong> (Github)
-                            <br><strong>Bash</strong>, <strong>Go</strong>, <strong>Rust</strong>
-                            <br><strong>HTML</strong>, <strong>CSS</strong> (Bootstrap) y <strong>Javascript</strong>.
-                            <br>Me encanta <strong>Linux</strong> y actualmente estoy aprendiendo <strong>desarrollo
-                                backend</strong>.
-                        </p>
-                    </blockquote>
-                </figure>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/index.html">Mirage Trades</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
+                aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Equip</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/trades.html">Trades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Users</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-sm-2" type="search" placeholder="Item o Clase">
+                    <button class="btn btn-secondary my-2 my-sm-0" type="submit">Buscar</button>
+                </form>
             </div>
         </div>
-        <div class="row my-5 align-items-center">
-            <div class="col text-center">
-                <h3 class="display-5">Proyectos</h3>
+    </nav>
 
-                <div class="album py-5">
-                    <!-- <div class="container"> -->
-
-                    <div class="row justify-content-around row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 g-3" id="main">
-                        <!-- <div class="row g-3"> -->
-
-                        <!-- Tarjeta -->
-                        <!-- <div class="col rounded border border-warning" style="padding: 0%; background-color: #ffddc7;">
-                            <div class="mb-3">
-                                <div>
-                                    <img style="max-width: 100%;"
-                                        class="bd-placeholder-img card-img-top rounded-top border-bottom border-warning"
-                                        src="img/Mantis Banner.svg" alt="Mantis Banner">
-                                </div>
-                                <div class="card-body px-3">
-                                    <p class="h1">Mantis</p>
-
-                                    <p class="card-text">Programa web creado en Python con Flask, para la gestión de
-                                        pedidos de.</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                            <a type="button" class="btn btn-sm btn-warning" href="#">Ver</a>
-                                            <a type="button" class="btn btn-sm btn-primary"
-                                                href="https://github.com/IamRodion/Mantis" target="_blank">Github</a>
-                                        </div>
-                                        <span class="badge bg-warning">Python 3</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
-                        <!-- Tarjeta -->
-                        <!-- <div class="col rounded border border-warning" style="padding: 0%; background-color: #ffddc7;">
-                            <div class="mb-3">
-                                <div>
-                                    <img style="max-width: 100%;"
-                                        class="bd-placeholder-img card-img-top rounded-top border-bottom border-warning"
-                                        src="img/Mantis Banner.svg" alt="Mantis Banner">
-                                </div>
-                                <div class="card-body">
-                                    <p class="h1">Mantis</p>
-                                    <p class="card-text">Programa web creado en Python con Flask, para la gestión de
-                                        pedidos de
-                                        micro-empresas, desde la recepción hasta la entrega.</p>
-                                    <div class="d-flex justify-content-between align-items-center px-3">
-                                        <div class="btn-group">
-                                            <a type="button" class="btn btn-sm btn-warning" href="#">Ver</a>
-                                            <a type="button" class="btn btn-sm btn-primary"
-                                                href="https://github.com/IamRodion/Mantis" target="_blank">Github</a>
-                                        </div>
-                                        <span class="badge bg-warning">Python 3</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
-                        <!-- Tarjeta -->
-                        <!-- <div class="col rounded border border-warning" style="padding: 0%; background-color: #ffddc7;">
-                            <div class="mb-3">
-                                <div>
-                                    <img style="max-width: 100%;"
-                                        class="bd-placeholder-img card-img-top rounded-top border-bottom border-warning"
-                                        src="img/Mantis Banner.svg" alt="Mantis Banner">
-                                </div>
-                                <div class="card-body">
-                                    <p class="h1">Mantis</p>
-                                    <p class="card-text">Programa web creado en Python con Flask, para la gestión de
-                                        pedidos de
-                                        micro-empresas, desde la recepción hasta la entrega.</p>
-                                    <div class="d-flex justify-content-between align-items-center px-3">
-                                        <div class="btn-group">
-                                            <a type="button" class="btn btn-sm btn-warning" href="#">Ver</a>
-                                            <a type="button" class="btn btn-sm btn-primary"
-                                                href="https://github.com/IamRodion/Mantis" target="_blank">Github</a>
-                                        </div>
-                                        <span class="badge bg-warning">Python 3</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
-                    <!-- </div> -->
-                </div>
-            </div>
-        </div>
+    <div class="container my-4">
+        <h1>Mirage Trades</h1>
+        <p>This is a webpage for trading items in Mirage Realms</p>
     </div>
+
+    <figure class="text-center">
+        <blockquote class="blockquote">
+            <p class="mb-0">Created by <cite title="Source Title">IamRodion</cite></p>
+        </blockquote>
+        <figcaption class="blockquote-footer">
+            github.com/IamRodion
+        </figcaption>
+    </figure>
+
+    <script src="/js/jquery-3.7.0.min.js"></script>
     <script src="/js/bootstrap.bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
-        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
-    <script src="/js/scripts.js"></script>
+    <script src="/js/script.js"></script>
 </body>
+
 
 </html>
