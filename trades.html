@@ -33,8 +33,8 @@
                     </li>
                 </ul>
                 <form class="d-flex">
-                    <input class="form-control me-sm-2" type="search" placeholder="Item o Clase">
-                    <button class="btn btn-secondary my-2 my-sm-0" type="submit">Buscar</button>
+                    <input class="form-control me-sm-2" type="search" placeholder="Item or Class">
+                    <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
                 </form>
             </div>
         </div>
@@ -54,19 +54,23 @@
                     <th scope="col">Elite</th>
                     <th scope="col">Price</th>
                     <th scope="col">Seller</th>
+                    <th scope="col">Actions</th>
                 </tr>
             </thead>
             <tbody id="main">
                 <tr>
-                    <td><img src="img/icons/heavy/Boots-heavy-8.png" alt="Royal-Boots-Icon"></td>
-                    <td>Granite Boots</td>
+                    <td><img src="img/icons/heavy/Helmet-heavy-8.png" alt="Granite-Helmet-Icon"></td>
+                    <td>Granite Helmet</td>
                     <td><span class="badge rounded-pill bg-primary">18 Mele</span></td>
-                    <td><span class="badge rounded-pill bg-primary">9 Mele</span></td>
-                    <td>Fortified<br>Empowered</td>
-                    <td>No</td>
+                    <td><span class="badge rounded-pill bg-primary">6 Mele</span></td>
+                    <td>Fortified<br>Money Find</td>
+                    <td><img src="img/icons/others/Element-physical.png" alt="Element-physical-Icon"><br>Physical</td>
                     <td><img src="img/icons/others/Elite-no.png" alt="Elite-no-Icon"><br>No</td>
-                    <td><img src="img/icons/others/Gold.png" alt=""><br>180</td>
-                    <td>Carlos we</td>
+                    <td><img src="img/icons/others/Gold.png" alt=""><br>100</td>
+                    <td>Szajmov</td>
+                    <td><button type="button" class="btn btn-primary" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">More Details</button>
+                    </td>
                 </tr>
                 <tr>
                     <td><img src="img/icons/heavy/Chest-heavy-6.png" alt="Platinum-Armour-Icon"></td>
@@ -103,7 +107,7 @@
                 </tr>
                 <tr>
                     <td><img src="img/icons/heavy/Boots-heavy-9.png" alt="Golden-Boots-Icon"></td>
-                    <td>Crystal Gloves</td>
+                    <td>Golden Boots</td>
                     <td><span class="badge rounded-pill bg-primary">20 Mele</span></td>
                     <td><span class="badge rounded-pill bg-primary">10 Mele</span></td>
                     <td>Omni Resist<br>Thorns</td>
@@ -114,6 +118,37 @@
                 </tr>
             </tbody>
         </table>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">More Details</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <table class="table table-light table-striped align-middle text-center">
+                    <!-- <thead>
+                        <tr class="table-primary">
+                            <th scope="col">Granite Boots</th>
+                        </tr>
+                    </thead> -->
+                    <tbody>
+                        <tr><td><img src="img/icons/heavy/Helmet-heavy-8.png" alt="Granite-Helmet-Icon"></td></tr>
+                        <tr><td class="text-primary">Granite Helmet</td></tr>
+                        <tr><td class="text-dark">Req. level 80</td></tr>
+                        <tr><td>Fortified</td></tr>
+                        <tr><td>16 Armour</td></tr>
+                        <tr><td class="text-primary">24 Mele</td></tr>
+                        <tr><td class="text-success">9 Stamina</td></tr>
+                        <tr><td class="text-yellow">3% Money Find</td></tr>
+                        <tr><td class="text-success"><img src="img/icons/others/Element-physical.png" alt="Element-physical-Icon">5% Resist</td></tr>
+                        <!-- <tr><td><img src="img/icons/others/Elite-no.png" alt="Elite-no-Icon"><br>No</td></tr> -->
+                        <tr><td><img src="img/icons/others/Gold.png" alt=""><br>100</td></tr>
+                        <tr><td>Szajmov</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </div>
     <figure class="text-center">
         <blockquote class="blockquote">

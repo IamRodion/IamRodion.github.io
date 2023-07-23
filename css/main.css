@@ -5,3 +5,11 @@ td {
 span {
     vertical-align: middle;
   }
+
+.text-yellow {
+  color: #ECC706;
+}
+
+img {
+  height: 25px;
+}
