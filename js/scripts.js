@@ -1,7 +1,8 @@
 const main = $("#main")
 
 $.ajax({
-    url: "https://api.github.com/users/IamRodion/repos",
+//    url: "https://api.github.com/users/IamRodion/repos",
+    url: "https://run.mocky.io/v3/380cc591-ccbc-4377-b12d-bbf8ee067939",
     method: "GET"
 }).then(results => {
     console.log(results)
