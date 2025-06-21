@@ -1,35 +1,48 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from "react";
+import { useState, useEffect } from "react";
+import api from "./api";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import ProfileHeader from "./components/ProfileHeader";
+import ProjectCard from "./components/ProjectCard";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [projects, setProjects] = useState([]);
 
+  useEffect(() => {
+    getProjects();
+  }, []);
+
+  const getProjects = async () => {
+    try {
+      const { data } = await api.get("users/IamRodion/repos");
+      setProjects(data);
+    } catch (err) {
+      console.error(err);
+    }
+  };
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <Container className="container my-3 text-center">
+      <Row className="align-items-center justify-content-center mb-4">
+        <Col xs={12}>
+          <ProfileHeader />
+        </Col>
+      </Row>
+      <Row className="row justify-content-center">
+        {projects.map((project) => (
+          <ProjectCard
+            id={project.id}
+            name={project.name}
+            description={project.description}
+            html_url={project.html_url}
+            language={project.language}
+          />
+        ))}
+      </Row>
+    </Container>
+  );
 }
 
-export default App
+export default App;
